@@ -23,3 +23,10 @@ jobs:
 
     - name: Executar Testes com Maven
       run: mvn test
+
+    - name: Upload do Relatório de Testes
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: relatorio-testes
+        path: target/surefire-reports/
