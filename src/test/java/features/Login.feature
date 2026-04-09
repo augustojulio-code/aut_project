@@ -5,7 +5,7 @@ Feature: Login
     Para acessar minha conta
 
   Scenario: Login com credenciais válidas
-    Given que estou na página de login
-    When preencho o campo de usuário e senha com "standard_user" e "secret_sauce"
-    And clico no botão de login
-    Then devo ser redirecionado para a página inicial
+    Given que estou na pagina de login
+    When preencho o campo de usuario e senha com "standard_user" e "secret_sauce"
+    And clico no botao de login
+    Then devo ser redirecionado para a pagina inicial

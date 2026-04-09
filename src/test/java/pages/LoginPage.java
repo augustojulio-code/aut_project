@@ -30,4 +30,8 @@ public class LoginPage extends BasePage {
         click(loginButton);
     }
 
+    public boolean isAtInventoryPage() {
+        return driver.getCurrentUrl().contains("/inventory.html");
+    }
+
 }
